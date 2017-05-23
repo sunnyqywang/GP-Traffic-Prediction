@@ -1,0 +1,1 @@
+function mtx = Normalize(mtx)%% Function that normalize input matrix by column%% each element x will be normalized by (x - mean) / stddev    M = mean(mtx, 1);    s = std(mtx, 1);        mtx = (mtx-M)./s;end
